@@ -1,0 +1,59 @@
+{%extends "resume/base.html"%}
+{%load static%}
+
+
+{%block content%}
+
+  <div class="container">
+    <div class="jumbotron jumbotron fluid">
+      <table class="table table-hover">
+        <thead>
+          <a href="{%url 'home'%}">
+            <img src="{% static 'images/back.png' %}">
+          </a>
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Subject</th>
+            <th scope="col">Email</th>
+            <th scope="col">Id</th>
+          </tr>
+        </thead>
+        
+        <tbody>
+  
+          {% for message in messageRequests  %}
+            <tr>
+              <th scope="row">{{message.name}}</th>
+              <td>
+                <a href="{%url 'message-view' message.pk %}" style="font-weight:bold">
+                  
+                {{message.subject}}
+                 
+                </a>
+              </td>
+              <td>{{message.email}}</td>
+              <td>{{message.id}}</td>
+
+           
+              
+            </tr>
+           
+          {% endfor %}
+           
+        </tbody>
+      </table>
+      <h
+
+    </div>
+
+    <div
+ 
+      
+     
+      
+  </div>
+        
+{%endblock content%}
+
+
+

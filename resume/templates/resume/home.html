@@ -1,0 +1,93 @@
+{%extends "resume/base.html" %}
+{%load static%}
+
+{% block content %}
+
+{% load static %}
+ 
+	<br>
+  
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3">
+				<div class="card card-body h-100  " id="profile-wrapper">
+					<img id="profile-pic" src="{% static 'images/gbotemi.jpg' %}" >
+					<hr>
+					<h4>Gbotemi Bolarinwa</h4>
+				</div>
+			</div>
+		</div>	
+		<div class="row">
+			<br>
+			<div class="col-md-12">
+				<div class="card card-body h-100 ">
+					<h4>About Me</h4>
+					<hr>
+					<p> I am a Data Science enthusiast. I have passion for using data to transform the world, provide solution to problems.
+						I am currently learning backend development with python. I am looking to collaborate on Machine Learning Projects and Django projects. </p>
+
+					<p>I am currently seeking for Intership positions in Data Science.</p>
+					<p>My hobbies are listening to music and playing computer games. </p>
+
+
+				</div>
+			</div>
+		</div>
+		<br>
+		<div class="row">
+			<div class="col-md-12">
+				<div class="card card-body h-100">
+					<h5>Work Experience</h5>
+					<hr>
+					<p>I interned as XlevelRetail.com for 6months. I worked as a support adminstrator for a deployed retail solutions for Retails stores all over Lagos and a few states in Nigeria.</p>
+					<p>I also interned in a microelectronics research group. I worked on various machine learning and deep learning projects.</p>
+					</div>
+			</div>
+		</div>
+		<br>
+		<div class="row">
+
+			<div class="col-md-12">
+				<div class="card card-body h-100">
+					<h5>Skill set</h5>
+					<hr>
+					<p>Languages: Python(core), Java, JavaScript, Basic HTML/CSS, BootStrap</p>
+					<p>Frameworks: Pandas, Numpy, Sklearn, Scipy, Git, Django </p>
+					<p>I also have a good understanding of Data Structures & Algorithms, Object Oriented Programming</p>
+				</div>
+			</div>
+		</div>
+		<br>
+		<div class="row">
+
+			<div class="col-md-12">
+				<div class="card card-body h-100">
+					<h5>Contact Details</h5>
+					<hr>
+					<p><a href="https://github.com/gbotemib">gbotemib@github</a></p>
+					<p><a href="https://www.linkedin.com/in/emmanuel-bolarinwa-03710715a/">Emmanuel Bolarinwa on linkedin</a></p>
+					<p>Mobile No: 081 7366 3139</p>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+  <div class="jumbotron" style="text-align: center;">
+   
+    <a class="btn btn-primary btn-lg" href="{%url 'contact' %}" role="button">Contact Me</a>
+	<p>Powered by HNG internship</p>
+	<div class="img-rounded">
+		<a href="https://internship.zuri.team/">
+		  <img src="{%static 'images/zuri.png' %}" height="50px" width="150px%">
+		</a>
+	   
+	  </div>
+  </div>
+
+
+{% endblock content %}
+
+  
+  
+</body>
+</html>
